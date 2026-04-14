@@ -1,3 +1,5 @@
+
+import logo from "./icon-192.png";
 import React, { useState } from "react";
 import "./App.css";
 import Dashboard from "./Dashboard";
@@ -11,7 +13,7 @@ function App() {
     <div>
 
       <header className="header">
-        <img src="icon.png" className="logo" alt="logo"/>
+        <img src={logo} alt="logo" className="logo" />
         <h1>SMART STUDY HUB</h1>
         <p>PLAN • FOCUS • ACHIEVE</p>
       </header>
