@@ -1,38 +1,162 @@
-.App {
+/* 🌍 GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5efe6;
+
+  background-image:
+    linear-gradient(to right, rgba(120, 90, 60, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 90, 60, 0.1) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+  color: #5a4634;
+}
+
+/* 📦 HEADER */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.header h1 {
+  margin: 5px 0;
+  letter-spacing: 3px;
+  color: #5a3e2b;
+}
+
+.header p {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #8b6b4c;
+}
+
+/* 🔘 NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* 🔘 BUTTONS */
+button {
+  background: #a67c52;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #8b5e3c;
+}
+
+/* 📦 CARD SECTIONS */
+section {
+  max-width: 550px;
+  margin: 25px auto;
+  background: #fffaf3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* 📝 LIST */
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: #f3e5d8;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ⏳ FLIP TIMER */
+.flip-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.time-box {
+  background: #fffaf3;
+  color: #5a4634;
+  font-size: 40px;
+  padding: 15px 20px;
+  border-radius: 12px;
+
+  box-shadow: 
+    0 4px 8px rgba(0,0,0,0.1),
+    inset 0 -4px 0 rgba(0,0,0,0.08);
+
+  font-weight: bold;
+  min-width: 60px;
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+.time-box:active {
+  transform: rotateX(20deg);
+}
+
+.colon {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* 🎯 HEADINGS */
+section h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section h3 {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sound-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sound-grid button {
+  background: #e8d5c0;
+  color: #5a4634;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 8px;
+}
+
+.sound-grid button:hover {
+  background: #d9c2a8;
+}
+
+.sound-grid button {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section p {
+  margin: 5px 0;
 }

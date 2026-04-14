@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import "./App.css";
+import Dashboard from "./Dashboard";
+import Planner from "./Planner";
+import Focus from "./Focus";
+import Analytics from "./Analytics";
 function App() {
+  const [section, setSection] = useState("dashboard");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+
+      <header className="header">
+        <img src="icon.png" className="logo" alt="logo"/>
+        <h1>SMART STUDY HUB</h1>
+        <p>PLAN • FOCUS • ACHIEVE</p>
       </header>
+
+      <nav>
+        <button onClick={() => setSection("dashboard")}>Dashboard</button>
+        <button onClick={() => setSection("planner")}>Planner</button>
+        <button onClick={() => setSection("focus")}>Focus</button>
+        <button onClick={() => setSection("analytics")}>Analytics</button>
+      </nav>
+
+      {section === "dashboard" && <Dashboard />}
+      {section === "planner" && <Planner />}
+      {section === "focus" && <Focus />}
+      {section === "analytics" && <Analytics />}
+
     </div>
   );
 }
