@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/study-hub/static/css/main.a014957e.css",
+    "main.js": "/study-hub/static/js/main.306a935a.js",
+    "static/js/453.b6289c05.chunk.js": "/study-hub/static/js/453.b6289c05.chunk.js",
+    "index.html": "/study-hub/index.html",
+    "main.a014957e.css.map": "/study-hub/static/css/main.a014957e.css.map",
+    "main.306a935a.js.map": "/study-hub/static/js/main.306a935a.js.map",
+    "453.b6289c05.chunk.js.map": "/study-hub/static/js/453.b6289c05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a014957e.css",
+    "static/js/main.306a935a.js"
+  ]
+}
